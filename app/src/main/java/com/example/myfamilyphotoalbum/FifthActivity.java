@@ -15,6 +15,9 @@ public class FifthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fifth);
         myButton = findViewById(R.id.button4);
+
+        // Line by Kola
+
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
