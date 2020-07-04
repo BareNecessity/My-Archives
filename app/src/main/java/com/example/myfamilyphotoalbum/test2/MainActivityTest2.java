@@ -17,5 +17,6 @@ public class MainActivityTest2 extends AppCompatActivity {
         String userName = ((EditText)findViewById(R.id.editText2)).getText().toString();
 
         String password = ((EditText)findViewById(R.id.editText)).getText().toString();
+        //Seen. What does it do?
     }
 }
