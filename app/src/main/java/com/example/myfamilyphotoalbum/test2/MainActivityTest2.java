@@ -37,7 +37,7 @@ public class MainActivityTest2 extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (usernameIsCorrect() && passwordIsCorrect()){
-                    Intent move = new Intent(MainActivityTest2.this, SecondActivity.class);
+                    Intent move = new Intent(MainActivityTest2.this, MainActivity.class);
                     startActivity(move);
                 }else{
                     Toast.makeText(MainActivityTest2.this, "Invalid username or password", Toast.LENGTH_LONG).show();
