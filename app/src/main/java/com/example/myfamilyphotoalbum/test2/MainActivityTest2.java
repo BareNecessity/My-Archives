@@ -18,6 +18,7 @@ import com.example.myfamilyphotoalbum.test1.MainActivity;
 import com.example.myfamilyphotoalbum.test1.SecondActivity;
 
 public class MainActivityTest2 extends AppCompatActivity {
+    Button myButton;
 
 
 
@@ -41,6 +42,19 @@ public class MainActivityTest2 extends AppCompatActivity {
 
                 Log.v("myTag", "userName = " +userName);
                 Log.v("myTag", "password = " +password);
+
+
+                    }
+                });
+        myButton = findViewById(R.id.button2);
+        myButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent move = new Intent(MainActivityTest2.this, MainActivity.class);
+                startActivity(move);
+
+
+
 
             }
         });
