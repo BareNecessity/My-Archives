@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.myfamilyphotoalbum.R;
 import com.example.myfamilyphotoalbum.test1.MainActivity;
@@ -19,8 +20,8 @@ import com.example.myfamilyphotoalbum.test1.SecondActivity;
 
 public class MainActivityTest2 extends AppCompatActivity {
 
-
-
+    String realUsername = "Username24";
+    String realPassword = "password123";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,24 +30,30 @@ public class MainActivityTest2 extends AppCompatActivity {
 
         //Seen. What does it do?
 
-
         // When you click on the enter button, the content of the username and password get retrieved into a String
 
         findViewById(R.id.button7).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                String userName = ((EditText)findViewById(R.id.editText2)).getText().toString();
+                if (usernameIsCorrect() && passwordIsCorrect()){
+                    Intent move = new Intent(MainActivityTest2.this, SecondActivity.class);
+                    startActivity(move);
+                }else{
+                    Toast.makeText(MainActivityTest2.this, "Invalid username or password", Toast.LENGTH_LONG).show();
+                }
 
-                String password = ((EditText)findViewById(R.id.editText)).getText().toString();
+            }});
 
-                Log.v("myTag", "userName = " +userName);
-                Log.v("myTag", "password = " +password);
+    }
 
+    private boolean passwordIsCorrect() {
+        String userName = ((EditText)findViewById(R.id.editText2)).getText().toString();
+        return userName.equals(realUsername);
+    }
 
-                    }
-                });
-
-
+    private boolean usernameIsCorrect() {
+        String password = ((EditText)findViewById(R.id.editText)).getText().toString();
+        return password.equals(realPassword);
     }
 }
