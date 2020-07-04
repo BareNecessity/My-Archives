@@ -17,6 +17,7 @@ public class FifthActivity extends AppCompatActivity {
         myButton = findViewById(R.id.button4);
 
         // Line by Kola
+        // this is the way.
 
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
