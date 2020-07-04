@@ -30,6 +30,8 @@ public class SecondActivity extends AppCompatActivity {
                 Intent move = new Intent(SecondActivity.this, MainActivity.class);
                 startActivity(move);
 
+                myButton
+
             }
         });
 
