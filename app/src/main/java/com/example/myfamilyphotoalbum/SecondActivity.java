@@ -30,12 +30,17 @@ public class SecondActivity extends AppCompatActivity {
                 Intent move = new Intent(SecondActivity.this, MainActivity.class);
                 startActivity(move);
 
-                myButton
 
             }
         });
+        myButton = findViewById(R.id.button5);
+        myButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent move = new Intent(SecondActivity.this, MainActivity.class);
+                startActivity(move);
+
 
 
             }
-
         }
