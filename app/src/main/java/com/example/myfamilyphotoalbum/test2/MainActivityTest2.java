@@ -3,6 +3,7 @@ package com.example.myfamilyphotoalbum.test2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -26,6 +27,9 @@ public class MainActivityTest2 extends AppCompatActivity {
                 String userName = ((EditText)findViewById(R.id.editText2)).getText().toString();
 
                 String password = ((EditText)findViewById(R.id.editText)).getText().toString();
+
+                Log.v("myTag", "userName = " +userName);
+                Log.v("myTag", "password = " +password);
 
             }
         });
