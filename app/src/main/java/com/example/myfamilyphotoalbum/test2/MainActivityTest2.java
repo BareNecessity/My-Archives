@@ -4,8 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.view.View;
 import android.widget.Button;
+
+import android.util.Log;
+import android.view.View;
+
 import android.widget.EditText;
 
 import com.example.myfamilyphotoalbum.R;
@@ -13,7 +18,7 @@ import com.example.myfamilyphotoalbum.test1.MainActivity;
 import com.example.myfamilyphotoalbum.test1.SecondActivity;
 
 public class MainActivityTest2 extends AppCompatActivity {
-    Button myButton;
+
 
 
     @Override
@@ -21,22 +26,24 @@ public class MainActivityTest2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_test2);
 
-        String userName = ((EditText)findViewById(R.id.editText2)).getText().toString();
-
-        String password = ((EditText)findViewById(R.id.editText)).getText().toString();
         //Seen. What does it do?
 
 
-        myButton = findViewById(R.id.button7);
-        myButton.setOnClickListener(new View.OnClickListener() {
+        // When you click on the enter button, the content of the username and password get retrieved into a String
+
+        findViewById(R.id.button7).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent move = new Intent(MainActivityTest2.this, MainActivity.class);
-                startActivity(move);
+
+                String userName = ((EditText)findViewById(R.id.editText2)).getText().toString();
+
+                String password = ((EditText)findViewById(R.id.editText)).getText().toString();
+
+                Log.v("myTag", "userName = " +userName);
+                Log.v("myTag", "password = " +password);
+
             }
         });
-
-
 
 
     }
