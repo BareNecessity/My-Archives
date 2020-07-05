@@ -28,13 +28,13 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="248dp"
-        android:layout_height="280dp"
+        android:layout_width="233dp"
+        android:layout_height="202dp"
         android:layout_below="@+id/button9"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="107dp"
         android:text="Oluwatosin considers himself a top-class driver?
 He looks forward to driving in a competition someday.
 He also swims very well.
@@ -42,10 +42,19 @@ He has interests in politics, machine learning, data science and robotics.
 "
         android:textColor="#ff1a40"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:text="Next" />
 
 
 </RelativeLayout>

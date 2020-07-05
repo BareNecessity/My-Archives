@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.myfamilyphotoalbum.R;
+import com.example.myfamilyphotoalbum.test2.MainActivityTest2;
 
 public class FifthActivity extends AppCompatActivity {
     Button myButton;
@@ -24,7 +25,7 @@ public class FifthActivity extends AppCompatActivity {
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent move = new Intent(FifthActivity.this, FourthActivity.class);
+                Intent move = new Intent(FifthActivity.this, MainActivityTest2.class);
                 startActivity(move);
             }
 
