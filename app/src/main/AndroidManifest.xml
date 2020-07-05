@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivityTest4"></activity>
+
 
         <activity android:name=".test1.FifthActivity" />
         <activity android:name=".test1.FourthActivity" />
         <activity android:name=".test1.ThirdActivity" />
+    <activity android:name=".MainActivityTest4"/>
         <activity android:name=".test1.SecondActivity" />
         <activity android:name=".test2.MainActivityTest3"/>
         <activity android:name=".test1.MainActivity" />

@@ -18,7 +18,7 @@ public class MainActivityTest3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_test3);
-        myButton = findViewById(R.id.button2);
+        myButton = findViewById(R.id.button12);
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
