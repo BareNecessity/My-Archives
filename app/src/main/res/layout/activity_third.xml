@@ -7,9 +7,10 @@
     tools:context=".test1.ThirdActivity">
 
     <Button
-        android:layout_width="350dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:background="#21ed95"
+        android:layout_marginTop="28dp"
         android:text="Family Album"
         android:textColor="#3c3182"
         android:textSize="20sp"
