@@ -22,6 +22,7 @@ public class MainActivityTest2 extends AppCompatActivity {
 
     String realUsername = "Username24";
     String realPassword = "password123";
+    // Password and Username preset to the above values.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
