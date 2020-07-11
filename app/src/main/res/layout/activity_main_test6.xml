@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mustang"
+    android:background="@drawable/fash"
     tools:context=".test2.MainActivityTest3">
 
     <Button
@@ -35,12 +35,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
         android:layout_marginBottom="107dp"
-        android:text="Oluwatosin considers himself a top-class driver.
-He looks forward to driving in a competition someday.
-He also swims very well.
-He has interests in politics, machine learning, data science and robotics.
-"
-        android:textColor="#ff1a40"
+        android:text="Ifeoluwa is a fashion designer. She picked up designig as a hobby and has done well to improve on it by going for formal training. She also writes poes and short stories. She also is an avid reader."
+        android:textColor="#ff00ff"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/button12"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,13 +44,14 @@ He has interests in politics, machine learning, data science and robotics.
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/button15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="29dp"
         android:text="Next" />
+
 
 
 </RelativeLayout>
